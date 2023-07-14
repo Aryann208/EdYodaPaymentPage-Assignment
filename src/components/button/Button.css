@@ -1,0 +1,11 @@
+.NavBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  color: #000;
+  font-weight: 500;
+  background-color: transparent;
+  cursor: pointer;
+}
