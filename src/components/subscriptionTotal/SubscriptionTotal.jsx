@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import TimerIcon from '../../assets/IconClock1.svg';
 import './SubscriptionTotal.css';
 const SubscriptionTotal = ({ course }) => {
@@ -7,11 +7,6 @@ const SubscriptionTotal = ({ course }) => {
   const duration = +course?.duration;
   const undiscountedPrice = Math.round(+duration * 1541.66);
   const discount = undiscountedPrice - totalPrice;
-  useEffect(() => {
-    console.log(monthPrice);
-    console.log(totalPrice);
-    console.log(duration);
-  });
 
   return (
     <div className="subscriptionTotal">
