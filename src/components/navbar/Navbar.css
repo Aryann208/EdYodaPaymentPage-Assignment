@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
 
-  height: 10vh;
+  height: 8vh;
   background-color: #ffffff;
 }
 .NavbarContainer {
@@ -28,6 +28,7 @@
 }
 .NavButton {
   width: 25vw;
+  cursor: pointer;
 }
 .NavItem {
   margin: 0 1em;
@@ -37,6 +38,7 @@
   margin: 0 2em;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .JoinBtn {
@@ -50,4 +52,11 @@
   background: linear-gradient(224deg, #0048ff 0%, #0096ff 100%);
   color: #fff;
   border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .NavLinks {
+    display: none;
+  }
 }

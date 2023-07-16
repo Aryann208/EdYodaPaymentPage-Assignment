@@ -10,13 +10,13 @@ const Navbar = () => {
         <h1 className="Logo">EDYODA</h1>
         <div className="NavLinks flex">
           <div className=" NavButton flex">
-            <Button btnText="Courses" />
-            <Button btnText="Programs" />
+            <Button className="NavItem" btnText="Courses" />
+            <Button className="NavItem" btnText="Programs" />
           </div>
           <div className="NavButton flex">
-            <img id="SearchIcon" src={SearchIcon} alt="" />
-            <span>Log in</span>
-            <button className="JoinBtn">Join Now</button>
+            <img className="NavItem" id="SearchIcon" src={SearchIcon} alt="" />
+            <span className="NavItem">Log in</span>
+            <button className="JoinBtn NavItem">Join Now</button>
           </div>
         </div>
       </div>
