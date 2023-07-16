@@ -2,7 +2,6 @@ import React from 'react';
 import TimerIcon from '../../assets/IconClock1.svg';
 import './SubscriptionTotal.css';
 const SubscriptionTotal = ({ course }) => {
-  const monthPrice = +course?.monthPrice?.slice(1);
   const totalPrice = +course?.totalPrice?.slice(1);
   const duration = +course?.duration;
   const undiscountedPrice = Math.round(+duration * 1541.66);
@@ -18,7 +17,7 @@ const SubscriptionTotal = ({ course }) => {
       <div className="box">
         <div>
           <p>Limited time offer</p>
-          <p className="price">-₹{discount}</p>
+          <p className="price">- ₹{discount}</p>
         </div>
         <p>
           <img src={TimerIcon} alt="" />
