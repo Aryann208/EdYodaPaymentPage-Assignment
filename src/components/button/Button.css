@@ -9,3 +9,8 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+.NavBtn:hover {
+  transform: scale(0.98);
+  transition: all 0.2s ease;
+}

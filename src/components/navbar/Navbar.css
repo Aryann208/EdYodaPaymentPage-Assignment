@@ -54,7 +54,10 @@
   border: none;
   cursor: pointer;
 }
-
+.JoinBtn:hover {
+  transform: scale(0.98);
+  transition: all 0.2s ease;
+}
 @media screen and (max-width: 800px) {
   .NavLinks {
     display: none;
